@@ -119,3 +119,39 @@ img {
 .menu-item .bintang {
     color: #64981f;
 }
+
+/* Reservasi */
+
+.reservation-box {
+    background-color: #eff1ff89;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.btn-custom {
+    background-color: #64981f;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #64981f;
+    color: white;
+}
+
+.form-control, .form-select {
+    background-color: #ffffff;
+    border: 1px solid #64981f;
+    color: rgb(0, 0, 0);
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: #ffffff;
+    border-color: #64981f;
+}
+
+.powered-by {
+    font-size: 0.85rem;
+    color: #64981f;
+}
+
+
