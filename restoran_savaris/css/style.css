@@ -26,6 +26,14 @@ img {
     min-width: 100%;
 }
 
+.bayangan-di-hover {
+    transition: all 0.4s;
+}
+
+.bayangan-di-hover:hover {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
 /*button*/
 
 .btn {
@@ -82,4 +90,32 @@ img {
 .intro-text p {
     max-width: 500px;
     margin: 16px auto 0 auto;
+}
+
+/* Menu */
+
+#menu .nav-pills .nav-link {
+    background-color: #fff;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: #222;
+    border-radius: 100px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+#menu .nav-pills .nav-link.active {
+    background-color: #64981f;
+    color: #ffffff;
+}
+
+/* Gambar */
+
+.menu-gambar {
+    width: 100px;   
+    height: auto;   
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+.menu-item .bintang {
+    color: #64981f;
 }
