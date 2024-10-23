@@ -123,14 +123,15 @@ img {
 /* Reservasi */
 
 .reservation-box {
-    background-color: #eff1ff89;
-    padding: 2rem;
-    border-radius: 8px;
+    background-color: #ffffff8a;
+    padding: 3rem;
+    border-radius: 50px;
 }
 
 .btn-custom {
     background-color: #64981f;
     color: white;
+    border-radius: 10px;
 }
 
 .btn-custom:hover {
@@ -154,4 +155,75 @@ img {
     color: #64981f;
 }
 
+.bg-custom {
+    background-image: url(../image/car-slider1.png); /* Path ke gambar */
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  .card-custom {
+    background-color: rgba(0, 0, 0, 0.7); /* Transparansi pada card */
+    border-radius: 10px;
+  }
+
+/* Footer Styles */
+.footer {
+    background-color: #646465;
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #3121a3;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    margin-right: 15px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #f5a45d;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer .row {
+    margin-bottom: 20px;
+}
+
+.footer .col-md-6 {
+    display: flex;
+    align-items: center;
+}
+
+.footer .text-end a {
+    margin-left: 10px;
+}
 
