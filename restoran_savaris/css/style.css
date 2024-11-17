@@ -35,7 +35,32 @@ img {
 }
 
 /*button*/
-
+.order-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #4CAF50; /* Warna hijau */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .order-button .icon {
+    margin-top: 5px; /* Jarak antara teks dan ikon */
+    width: 24px;
+    height: 24px;
+    fill: white;
+  }
+  
+  .order-button:hover {
+    background-color: #45a049; /* Warna hijau gelap saat hover */
+  }
+  
 .btn {
     border-radius: 0;
     padding: 14px 38px;
