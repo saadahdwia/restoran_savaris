@@ -261,3 +261,32 @@ img {
     margin-left: 10px;
 }
 
+.btn-reservasi {
+    display: inline-block;
+    margin: 10px auto;
+    padding: 10px 10px;
+    background-color: #ffd700;
+    color: #000;
+    font-size: 16px;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-reservasi:hover {
+    background-color: #ffcc00;
+}
+
+.order-now img {
+    margin: 2px;
+    width: 2px;
+}
+
+.map-container iframe {
+    width: 100%;
+    max-width: 10000px;
+    height: 400px;
+    border: 0;
+    margin-top: 20px;
+}
