@@ -145,11 +145,14 @@ img {
     color: #64981f;
 }
 
+.card-body {
+    padding-bottom: 0.1px;
+}
+
 /* About */
 
-.image-about {
-    padding-top: 70px;
-}
+
+
 
 /* Reservasi */
 
