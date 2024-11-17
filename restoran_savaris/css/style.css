@@ -120,6 +120,12 @@ img {
     color: #64981f;
 }
 
+/* About */
+
+.image-about {
+    padding-top: 70px;
+}
+
 /* Reservasi */
 
 .reservation-box {
