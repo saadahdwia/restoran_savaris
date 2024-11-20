@@ -145,6 +145,15 @@ img {
     color: #64981f;
 }
 
+.card-body {
+    padding-bottom: 0.1px;
+}
+
+/* About */
+
+
+
+
 /* Reservasi */
 
 .reservation-box {
