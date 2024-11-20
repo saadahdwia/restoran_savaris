@@ -1,14 +1,13 @@
 <?php
-$servername = "localhost"; // Ganti sesuai dengan konfigurasi database Anda
-$username = "root"; // Ganti sesuai dengan konfigurasi database Anda
-$password = ""; // Ganti sesuai dengan konfigurasi database Anda
-$dbname = "restoran_savaris";
+$host = "localhost";
+$user = "root";
+$password = "";
+$database = "restoran_savaris";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($host, $user, $password, $database);
 
-// Check connection
+// Periksa koneksi
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    die("Koneksi gagal: " . $conn->connect_error);
 }
 ?>
