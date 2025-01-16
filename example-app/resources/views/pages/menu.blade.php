@@ -1,3 +1,6 @@
+@include('auth.login')
+@include('auth.register')
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -10,7 +13,7 @@
 </head>
   <body>
 
-    @include('partials.navbar')
+  <?php include ('./n&f/navbar.php'); ?>
 
     <!-- Menu -->
     <section id="menu">
@@ -57,7 +60,6 @@
                                         <i class="ri-star-fill"></i>
                                         <i class="ri-star-fill"></i>
                                     </span>
-                                    
                                 </div>
                                 <h5 class="my-2"><a href="#">Brownis Telur</a></h5>
                                 <p class="small">Brownis telur, lembut, manis, dengan aroma telur yang khas.</p>
@@ -382,7 +384,7 @@
 
     </section>
 
-    @include('partials.footer')
+    <?php include ('./n&f/footer.php'); ?>
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
