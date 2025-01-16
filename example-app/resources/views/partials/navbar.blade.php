@@ -10,21 +10,22 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
 
-              <li class="nav-item">
-                <a class="nav-link" href="../restoran_savaris/index.php">Home</a>
+            <li class="nav-item">
+                  <a class="nav-link" href="{{ route('welcome') }}">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../restoran_savaris/about.php">About</a>
+                  <a class="nav-link" href="{{ route('about') }}">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../restoran_savaris/menu.php">Menu</a>
+                  <a class="nav-link" href="{{ route('menu') }}">Menu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../restoran_savaris/Reservasi.php">Reservasi</a>
+                  <a class="nav-link" href="{{ route('reservasi') }}">Reservasi</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../restoran_savaris/contact.php">contact</a>
+                  <a class="nav-link" href="{{ route('contact') }}">Contact</a>
               </li>
+
             </ul>
             <a href="#" class="btn btn-brand">Order Online</a>
             <button type="button" class="btn btn-brand">
