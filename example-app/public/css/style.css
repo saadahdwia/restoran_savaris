@@ -290,3 +290,27 @@ img {
     border: 0;
     margin-top: 20px;
 }
+
+.order-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.order-now {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.order-now img {
+    height: 100px;
+    width: auto; /* Agar proporsi logo tetap terjaga */
+    transition: transform 0.3s ease;
+}
+
+.order-now img:hover {
+    transform: scale(1.1); /* Efek zoom saat hover */
+}
