@@ -1,3 +1,6 @@
+@include('auth.login')
+@include('auth.register')
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -57,7 +60,6 @@
                                         <i class="ri-star-fill"></i>
                                         <i class="ri-star-fill"></i>
                                     </span>
-                                    
                                 </div>
                                 <h5 class="my-2"><a href="#">Brownis Telur</a></h5>
                                 <p class="small">Brownis telur, lembut, manis, dengan aroma telur yang khas.</p>
@@ -381,6 +383,22 @@
         </div>
 
     </section>
+        <script>
+        let cartCount = 0;
+
+        // Tangkap semua tombol "Tambah ke Keranjang"
+        const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+
+        // Tambahkan event listener untuk setiap tombol
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                cartCount++;
+                document.getElementById('cart-count').textContent = cartCount;
+            });
+        });
+        </script>
+            
+
 
     @include('partials.footer')
     

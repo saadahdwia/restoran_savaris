@@ -1,3 +1,5 @@
+@include('auth.login')
+@include('auth.register')
 
 <!doctype html>
 <html lang="en">
