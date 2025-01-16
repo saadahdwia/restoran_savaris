@@ -11,17 +11,18 @@ Route::get('/', function () {
 })->name('welcome');
 
 Route::get('/about', function () {
-    return view('about');
+    return view('pages.about');
 })->name('about');
 
 Route::get('/menu', function () {
-    return view('menu');
+    return view('pages.menu');
 })->name('menu');
 
 Route::get('/reservasi', function () {
-    return view('reservasi');
+    return view('pages.reservasi');
 })->name('reservasi');
 
 Route::get('/contact', function () {
-    return view('contact');
+    return view('pages.contact');
 })->name('contact');
+

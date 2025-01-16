@@ -1,40 +1,16 @@
-<?php
-// Sertakan koneksi database
-include 'koneksi.php';
 
-// Proses data ketika form disubmit
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $jumlah_orang = $_POST['jumlah_orang'];
-    $tanggal = $_POST['tanggal'];
-    $waktu = $_POST['waktu'];
-
-    // Simpan data ke database
-    $sql = "INSERT INTO reservasi (jumlah_orang, tanggal, waktu) VALUES (?, ?, ?)";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("iss", $jumlah_orang, $tanggal, $waktu);
-
-    if ($stmt->execute()) {
-        $pesan = "Reservasi berhasil! Kami akan menghubungi Anda segera.";
-    } else {
-        $pesan = "Terjadi kesalahan: " . $stmt->error;
-    }
-
-    $stmt->close();
-}
-?>
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Reservasi</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css"
-</head>
-<body>
-<?php include ('./n&f/navbar.php'); ?>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
+    </head>
+@include('partials.navbar')
      <!-- Reservation Form Section -->
 
      <div class="bg-custom">
@@ -117,7 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         </div>
 
-        <?php include ('./n&f/footer.php'); ?>
+        @include('partials.footer')
 </body>
 
 </html>
