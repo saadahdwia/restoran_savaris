@@ -3,42 +3,34 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use App\Models\User;
 use Illuminate\Http\Request;
+use App\Models\User;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Validator;
 
 class RegisterController extends Controller
 {
     public function showRegisterForm()
     {
-        // Menampilkan form register
-        return view('auth.register');
+        return view('register');
     }
 
     public function register(Request $request)
     {
-        // Validasi input form
-        $validator = Validator::make($request->all(), [
+        // Validasi data yang diterima
+        $validated = $request->validate([
             'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users',
+            'email' => 'required|email|unique:users,email',
             'password' => 'required|string|min:8|confirmed',
         ]);
 
-        // Jika validasi gagal, kembali ke form dengan pesan error
-        if ($validator->fails()) {
-            return back()->withErrors($validator)->withInput();
-        }
-
-        // Simpan data pengguna baru
-        User::create([
-            'name' => $request->name,
-            'email' => $request->email,
-            'password' => Hash::make($request->password),
+        // Simpan pengguna baru
+        $user = User::create([
+            'name' => $validated['name'],
+            'email' => $validated['email'],
+            'password' => Hash::make($validated['password']),
         ]);
 
-        // Redirect atau beri pesan sukses
-        return redirect()->route('login')->with('success', 'Registrasi Sukses.');
+        return redirect()->route('login')->with('success', 'Pendaftaran berhasil!');
     }
 }
 
