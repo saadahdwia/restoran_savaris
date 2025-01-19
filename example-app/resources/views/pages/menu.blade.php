@@ -6,14 +6,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Savaris Resto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="./css/style.css"
 </head>
   <body>
 
-  @include('partials.navbar')
+  <?php include ('./n&f/navbar.php'); ?>
 
     <!-- Menu -->
     <section id="menu">
@@ -383,24 +383,9 @@
         </div>
 
     </section>
-        <script>
-        let cartCount = 0;
 
-        // Tangkap semua tombol "Tambah ke Keranjang"
-        const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+    <?php include ('./n&f/footer.php'); ?>
 
-        // Tambahkan event listener untuk setiap tombol
-        addToCartButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                cartCount++;
-                document.getElementById('cart-count').textContent = cartCount;
-            });
-        });
-        </script>
-            
-
-
-    @include('partials.footer')
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
