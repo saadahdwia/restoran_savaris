@@ -29,6 +29,11 @@
                     <div class="alert alert-info">
                         Selamat datang, {{ Auth::user()->name }}!
                     </div>
+                    <!-- Logout Button -->
+                    <form action="{{ route('logout') }}" method="POST">
+                        @csrf
+                        <button type="submit" class="btn btn-danger">Logout</button>
+                    </form>
                 @else
                     <!-- Form login -->
                     <form action="{{ route('login.process') }}" method="POST">

@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
-
+use App\Http\Controllers\ReservationController;
 
 // Rute halaman utama
 Route::get('/', function () {
@@ -44,7 +44,9 @@ Route::middleware(['auth'])->group(function () {
         return view('dashboard');
     })->name('dashboard');
 
-    Route::get('/reservasi', function () {
-        return view('pages.reservasi');
-    })->name('reservasi');
+
+    Route::get('/reservasi', [ReservationController::class, 'index'])->name('reservasi.index');
+    Route::post('/reservasi', [ReservationController::class, 'store'])->name('reservasi.store');
+
+
 });
