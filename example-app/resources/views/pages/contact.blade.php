@@ -6,15 +6,13 @@
     <title>Savaris Resto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="./css/style.css"
-</head>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  </head>
   <body>
 
     @include('partials.navbar')
-    
-    <body>
-        <div class="container">
-            <h1>Contact Us</h1>
+    <h1>Contact Us</h1>
             <p>Terima kasih telah mengunjungi website Restoran Savaris.</p>
             <h2>OPEN FOR DINE-IN</h2>
             <p>11.00 – 22.00 Wib</p>
@@ -27,13 +25,12 @@
             </div>
             <h3>Alamat</h3>
             <p>Jl. Pahlawan No.99 Surabaya</p>
-            <div class="map-container">
-                <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126646.20960987199!2d112.630280414473!3d-7.275612006014132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbf8381ac47f%3A0x3027a76e352be40!2sSurabaya%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1737038177350!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-            <h3 class="order-title">Order Now</h3>
-            <div class="order-now">
+    <div class="container">
+        <div class="map-container">
+            <div id="map" style="height: 450px; width: 100%;"></div>
+        </div>
+        <h3 class="order-title">Order Now</h3>
+        <div class="order-now">
             <a href="https://www.gofood.com" target="_blank">
                 <img src="/images/gofood.png" alt="GoFood">
             </a>
@@ -43,14 +40,29 @@
             <a href="https://shopeefood.com" target="_blank">
                 <img src="/images/Shopee.png" alt="Shopee Food">
             </a>
-            </div>
-
         </div>
-    </body>
+    </div>
 
     @include('partials.footer')
 
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('map').setView([-7.319925, 112.770088], 13);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+        
+        var locations = [
+            { name: 'Cabang 1', lat: -7.319925, lng: 112.770088 },
+            { name: 'Cabang 2', lat: -7.817019, lng: 112.061357 },
+            { name: 'Cabang 3', lat: -6.946015, lng: 107.612573 }
+        ];
+
+        locations.forEach(function(location) {
+            L.marker([location.lat, location.lng]).addTo(map)
+                .bindPopup(location.name);
+        });
+    </script>
   </body>
 </html>
