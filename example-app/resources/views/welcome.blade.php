@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
   <body>
 
@@ -74,7 +74,7 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-12 intro-text">
+                <div class="col-12 intro-text" data-aos="fade-up">
                     <h1>Jelajahi Menu Kita</h1>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid repellat ab magni nemo autem ipsa nulla ex aut nisi! Quia necessitatibus, magni numquam possimus accusantium sed magnam praesentium error facere?</p>
                 </div>
@@ -98,11 +98,11 @@
 
             </ul>
     
-            <div class="tab-content" id="pills-tabContent">
+            <div class="tab-content" id="pills-tabContent" >
                 
                 <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab" tabindex="0">
                     <div class="row">
-                        <div class="col-lg-3 col-sm-6">
+                        <div class="col-lg-3 col-sm-6"data-aos="zoom-in-up">
                             <div class="menu-item bg-white bayangan-di-hover">
                                 <img src="./image/Menu1.jpg" alt="" class="menu-gambar">
                                 <div class="item-menu-content p-4">
@@ -122,7 +122,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-sm-6">
+                        <div class="col-lg-3 col-sm-6" data-aos="zoom-in-up">
                             <div class="menu-item bg-white bayangan-di-hover">
                                 <img src="./image/Menu2.jpg" alt="" class="menu-gambar">
                                 <div class="item-menu-content p-4">
@@ -142,7 +142,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-sm-6">
+                        <div class="col-lg-3 col-sm-6" data-aos="zoom-in-up">
                             <div class="menu-item bg-white bayangan-di-hover">
                                 <img src="./image/Menu3.jpg" alt="" class="menu-gambar">
                                 <div class="item-menu-content p-4">
@@ -162,7 +162,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-sm-6">
+                        <div class="col-lg-3 col-sm-6" data-aos="zoom-in-up">
                             <div class="menu-item bg-white bayangan-di-hover">
                                 <img src="./image/Menu4.jpg" alt="" class="menu-gambar">
                                 <div class="item-menu-content p-4">
@@ -202,7 +202,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-sm-6">
+                        <div class="col-lg-3 col-sm-6"data-aos="zoom-in-up">
                             <div class="menu-item bg-white bayangan-di-hover">
                                 <img src="./image/Menudrink2.jpg" alt="" class="menu-gambar">
                                 <div class="item-menu-content p-4">
@@ -222,7 +222,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-sm-6">
+                        <div class="col-lg-3 col-sm-6" data-aos="zoom-in-up">
                             <div class="menu-item bg-white bayangan-di-hover">
                                 <img src="./image/Menudrink3.jpg" alt="" class="menu-gambar">
                                 <div class="item-menu-content p-4">
@@ -242,7 +242,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-sm-6">
+                        <div class="col-lg-3 col-sm-6" data-aos="zoom-in-up">
                             <div class="menu-item bg-white bayangan-di-hover">
                                 <img src="./image/Menudrink4.jpg" alt="" class="menu-gambar">
                                 <div class="item-menu-content p-4">
@@ -267,7 +267,7 @@
 
                 <div class="tab-pane fade show" id="pills-makanan" role="tabpanel" aria-labelledby="pills-makanan-tab" tabindex="0">
                     <div class="row">
-                        <div class="col-lg-3 col-sm-6">
+                        <div class="col-lg-3 col-sm-6" data-aos="zoom-in-up">
                             <div class="menu-item bg-white bayangan-di-hover">
                                 <img src="./image/Menu1.jpg" alt="" class="menu-gambar">
                                 <div class="item-menu-content p-4">
@@ -287,7 +287,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-sm-6">
+                        <div class="col-lg-3 col-sm-6" data-aos="zoom-in-up">
                             <div class="menu-item bg-white bayangan-di-hover">
                                 <img src="./image/Menu2.jpg" alt="" class="menu-gambar">
                                 <div class="item-menu-content p-4">
@@ -307,7 +307,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-sm-6">
+                        <div class="col-lg-3 col-sm-6" data-aos="zoom-in-up">
                             <div class="menu-item bg-white bayangan-di-hover">
                                 <img src="./image/Menu3.jpg" alt="" class="menu-gambar">
                                 <div class="item-menu-content p-4">
@@ -327,7 +327,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-sm-6">
+                        <div class="col-lg-3 col-sm-6" data-aos="zoom-in-up">
                             <div class="menu-item bg-white bayangan-di-hover">
                                 <img src="./image/Menu4.jpg" alt="" class="menu-gambar">
                                 <div class="item-menu-content p-4">
@@ -352,8 +352,9 @@
 
                 <div class="tab-pane fade show" id="pills-minuman" role="tabpanel" aria-labelledby="pills-minuman-tab" tabindex="0">
                     <div class="row">
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="menu-item bg-white bayangan-di-hover">
+                        
+                        <div class="col-lg-3 col-sm-6" data-aos="zoom-in-up">
+                            <div class="menu-item bg-white bayangan-di-hover" >
                                 <img src="./image/Menudrink1.jpg" alt="" class="menu-gambar">
                                 <div class="item-menu-content p-4">
 
@@ -372,7 +373,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-sm-6">
+                        <div class="col-lg-3 col-sm-6" data-aos="zoom-in-up">
                             <div class="menu-item bg-white bayangan-di-hover">
                                 <img src="./image/Menudrink2.jpg" alt="" class="menu-gambar">
                                 <div class="item-menu-content p-4">
@@ -392,7 +393,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-sm-6">
+                        <div class="col-lg-3 col-sm-6" data-aos="zoom-in-up">
                             <div class="menu-item bg-white bayangan-di-hover">
                                 <img src="./image/Menudrink3.jpg" alt="" class="menu-gambar">
                                 <div class="item-menu-content p-4">
@@ -412,7 +413,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-sm-6">
+                        <div class="col-lg-3 col-sm-6" data-aos="zoom-in-up">
                             <div class="menu-item bg-white bayangan-di-hover">
                                 <img src="./image/Menudrink4.jpg" alt="" class="menu-gambar">
                                 <div class="item-menu-content p-4">
@@ -442,5 +443,9 @@
 
     @include('partials.footer')
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    </body>
 </html>
